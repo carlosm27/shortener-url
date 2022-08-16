@@ -1,0 +1,17 @@
+[package]
+name = "shortener-url"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum =  "0.5.9" 
+tokio = { version = "1.19.2", features = ["full"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3" }
+serde = "1.0.137"
+sqlx = { version = "0.5", features = ["runtime-tokio-native-tls", "postgres"] }
+nanoid = "0.4"
+url ="2.2"
+anyhow = "1.0.48"
